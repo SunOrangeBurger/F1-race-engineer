@@ -54,7 +54,7 @@ To run the program, follow these steps:
    ```
 2. Execute the main script:
    ```bash
-   python main.py
+   python Build main.py
    ```
 3. Follow the prompts to select a track and view the optimized race strategy.
 
