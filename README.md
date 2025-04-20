@@ -4,7 +4,6 @@
 This project aims to optimize race strategies for Formula 1 using a genetic algorithm. The program simulates various tire strategies and pit stop decisions to minimize total race time based on historical lap data.
 
 ## Table of Contents
-- [Introduction](#introduction)
 - [Algorithm Overview](#algorithm-overview)
 - [How It Works](#how-it-works)
 - [Data Sources](#data-sources)
@@ -13,8 +12,6 @@ This project aims to optimize race strategies for Formula 1 using a genetic algo
 - [Conclusion](#conclusion)
 - [Acknowledgments](#acknowledgments)
 
-## Introduction
-The program utilizes the FastF1 API to fetch track data, including lap times for different tire compounds. It then applies a genetic algorithm to explore various strategies, optimizing for the fastest race completion time.
 
 ## Algorithm Overview
 The core of the program is a genetic algorithm that simulates the evolution of race strategies over multiple generations. The algorithm consists of the following steps:
@@ -27,7 +24,7 @@ The core of the program is a genetic algorithm that simulates the evolution of r
 6. **Iteration**: Repeat the evaluation, selection, crossover, and mutation steps for a set number of generations.
 
 ## How It Works
-1. **Data Retrieval**: The program retrieves track data using the `get_track_data` function, which fetches lap times for different tire compounds and calculates Off-Track Sensitivity (OTS) for each circuit.
+1. **Data Retrieval**: The program retrieves track data using the `get_track_data` function, which fetches lap times for different tire compounds and calculates Overtakability Score (OTS) for each circuit.
    
 2. **Fitness Function**: The `fitness` function computes the total time taken for a given strategy, factoring in tire degradation and pit stop times.
 
@@ -44,7 +41,7 @@ The program relies on historical lap data stored in a CSV file (`data_need_fille
 - `LAP_TIME_MEDIUM`: Average lap time on medium tires
 - `LAP_TIME_HARD`: Average lap time on hard tires
 - `LAPS`: Total number of laps in the race
-- `OTS`: Off-Track Sensitivity value
+- `OTS`: Overtakability Score
 
 ## Usage
 To run the program, follow these steps:
@@ -66,8 +63,3 @@ The program includes visual representations of the race strategy, showing:
 
 ## Conclusion
 This project demonstrates the application of genetic algorithms in optimizing complex decision-making processes, such as race strategies in Formula 1. By leveraging historical data and simulating various strategies, the program provides insights into the most efficient race approaches.
-
-## Acknowledgments
-- [FastF1 API](https://github.com/theOehrly/Fast-F1) for providing the data.
-- [NumPy](https://numpy.org/) and [Pandas](https://pandas.pydata.org/) for data manipulation and numerical operations.
-- [Matplotlib](https://matplotlib.org/) for visualizations.
