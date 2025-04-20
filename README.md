@@ -10,7 +10,7 @@ This project aims to optimize race strategies for Formula 1 using a genetic algo
 - [Usage](#usage)
 - [Visualizations](#visualizations)
 - [Conclusion](#conclusion)
-- [Acknowledgments](#acknowledgments)
+
 
 
 ## Algorithm Overview
